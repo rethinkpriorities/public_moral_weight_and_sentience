@@ -1,7 +1,7 @@
 Species,5th-pct,50th-pct,95th-pct
-overall,0.0,0.004,0.272
+overall,0.0,0.004,0.267
 1: possession of nociceptors,3.0,8.0,8.0
-2: possession of integrative brain regions,0.0,0.0,5.25
+2: possession of integrative brain regions,0.0,0.0,5.0
 3: possession of neural pathways connecting nociceptiorrs to brain regions,5.0,10.0,10.0
 4: behavioural response modulated by chemical compounds,6.0,11.0,16.0
 5: evidence of motivational trade-offs,0.0,5.0,5.0
