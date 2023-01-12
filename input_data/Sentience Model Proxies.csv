@@ -1,0 +1,50 @@
+simple scoring,#1_high value proxies,#1 pleasure and pain centric model,high value proxies_anna,high value proxies_martina
+physiological responses to nociception or handling,protective behavior,physiological responses to nociception or handling,paying a cost to receive a reward,paying a cost to receive a reward
+protective behavior,paying a cost to receive a reward,protective behavior,paying a cost to avoid a noxious stimulus,paying a cost to avoid a noxious stimulus
+defensive behavior/fighting back,paying a cost to avoid a noxious stimulus,defensive behavior/fighting back,self-control,self-control
+noxious stimuli related vocalizations,self-control,noxious stimuli related vocalizations,predator avoidance tradeoffs,predator avoidance tradeoffs
+movement away from noxious stimuli,predator avoidance tradeoffs,movement away from noxious stimuli,selective attention to noxious stimuli over other concurrent events,selective attention to noxious stimuli over other concurrent events
+paying a cost to receive a reward,selective attention to noxious stimuli over other concurrent events,paying a cost to avoid a noxious stimulus,operant conditioning with unfamiliar action,operant conditioning with unfamiliar action
+paying a cost to avoid a noxious stimulus,operant conditioning with unfamiliar action,selective attention to noxious stimuli over other concurrent events,contextual learning,contextual learning
+self-control,contextual learning,taste aversion behavior,observational or social learning,observational or social learning
+predator avoidance tradeoffs,observational or social learning,pain relief learning,taste aversion behavior,taste aversion behavior
+selective attention to noxious stimuli over other concurrent events,taste aversion behavior,long-term behavior alteration to avoid noxious stimulus (24+ hours),pain relief learning,pain relief learning
+classical conditioning,pain relief learning,long-term behavior alteration to avoid noxious stimuli (30+ days),long-term behavior alteration to avoid noxious stimulus (24+ hours),long-term behavior alteration to avoid noxious stimulus (24+ hours)
+operant conditioning,long-term behavior alteration to avoid noxious stimulus (24+ hours),deception,long-term behavior alteration to avoid noxious stimuli (30+ days),long-term behavior alteration to avoid noxious stimuli (30+ days)
+operant conditioning with unfamiliar action,long-term behavior alteration to avoid noxious stimuli (30+ days),affected by analgesics in a manner similar to humans,uncertainty monitoring,uncertainty monitoring
+sensitization,uncertainty monitoring,self-administers analgesics,deception,deception
+habituation,deception,affected by recreational drugs in a similar manner to humans,tool use,nociception (strict definition)
+contextual learning,affected by analgesics in a manner similar to humans,self-administers recreational drugs,flexible tool use,nociception
+observational or social learning,self-administers analgesics,affected by antidepressants or anxiolytics in a similar manner to humans,nociception (strict definition),anhedonia behavior
+taste aversion behavior,affected by recreational drugs in a similar manner to humans,anhedonia behavior,anhedonia behavior,learned helplessness behavior
+pain relief learning,self-administers recreational drugs,learned helplessness behavior,learned helplessness behavior,displacement behavior
+long-term behavior alteration to avoid noxious stimulus (24+ hours),affected by antidepressants or anxiolytics in a similar manner to humans,displacement behavior,displacement behavior,adverse effects of social isolation
+long-term behavior alteration to avoid noxious stimuli (30+ days),navigate unknown paths/areas,adverse effects of social isolation,adverse effects of social isolation,stereotypic behavior
+uncertainty monitoring,spatial memory,stereotypic behavior,stereotypic behavior,fear/anxiety behavior
+self-recognition (mirror test),detour behavior,fear/anxiety behavior,fear/anxiety behavior,play behavior
+deception,anhedonia behavior,play behavior,play behavior,affected by analgesics in a manner similar to humans
+tool use,learned helplessness behavior,nociception,affected by analgesics in a manner similar to humans,self-administers analgesics
+flexible tool use,displacement behavior,nociception (strict definition),self-administers analgesics,affected by recreational drugs in a similar manner to humans
+affected by analgesics in a manner similar to humans,adverse effects of social isolation,opioid-like receptors,affected by recreational drugs in a similar manner to humans,self-administers recreational drugs
+self-administers analgesics,stereotypic behavior,,self-administers recreational drugs,affected by antidepressants or anxiolytics in a similar manner to humans
+affected by recreational drugs in a similar manner to humans,fear/anxiety behavior,,affected by antidepressants or anxiolytics in a similar manner to humans,navigate unknown paths/areas
+self-administers recreational drugs,play behavior,,navigate unknown paths/areas,spatial memory
+affected by antidepressants or anxiolytics in a similar manner to humans,nociception (strict definition),,spatial memory,detour behavior
+navigate known paths/areas,centralized information processing,,detour behavior,protective behavior
+navigate unknown paths/areas,vertebrate midbrain-like function,,protective behavior,centralized information processing
+spatial memory,,,centralized information processing,vertebrate midbrain-like function
+detour behavior,,,vertebrate midbrain-like function
+anhedonia behavior
+learned helplessness behavior
+displacement behavior
+adverse effects of social isolation
+stereotypic behavior
+fear/anxiety behavior
+play behavior
+nociception
+nociception (strict definition)
+opioid-like receptors
+centralized information processing
+vertebrate midbrain-like function
+motile
+distinct sleep-wake states

@@ -1,0 +1,84 @@
+qualitative,cubic,hc proxies,qualitative minus social,pleasure-and-pain-centric,higher/lower pleasures - cognitive,higher/lower pleasures - hedonic,undiluted experience - cognitive,undiluted experience - hedonic
+a not b detour test,a not b detour test,attention bias,a not b detour test,anxiety-like behavior,a not b detour test,anxiety-like behavior,a not b detour test,anxiety-like behavior
+attention bias,attention bias,body awareness,attention bias,associative learning from pain,body awareness,associative learning from pain,body awareness,associative learning from pain
+body awareness,body awareness,cross-modal learning,body awareness,depression-like behavior,communication,boredom-like behavior,communication,boredom-like behavior
+communication,communication,experience projection,cross-modal learning,disgust-like behavior,cooperative behavior,curiosity-like behavior,cooperative behavior,curiosity-like behavior
+cooperative behavior,cooperative behavior,inhibitory control,effects on exploratory behavior from pain,effects on exploratory behavior from pain,cross-modal learning,depression-like behavior,cross-modal learning,concept of death
+cross-modal learning,cross-modal learning,judgment bias,experience projection,embarrassment-like behavior,experience projection,disgust-like behavior,experience projection,depression-like behavior
+experience projection,experience projection,mental time travel,gratification delay,emotional reactions to learning,individual differences/personality,displacement behavior,gratification delay,disgust-like behavior
+gratification delay,gratification delay,mirror mark recognition,individual differences/personality,envy-like behavior,inhibitory control,effects on exploratory behavior from pain,individual differences/personality,displacement behavior
+individual differences/personality,individual differences/personality,motivational trade-off,inhibitory control,fear-like behavior,mental time travel,embarrassment-like behavior,inhibitory control,effects on exploratory behavior from pain
+inhibitory control,inhibitory control,perspective taking,judgment bias,flexible self-protective behavior,mirror mark recognition,emotional contagion,mental time travel,embarrassment-like behavior
+judgment bias,judgment bias,responses to novelty,memory bias,friendship-like behavior,multimodal integration,emotional reactions to learning,mirror mark recognition,emotional contagion
+memory bias,memory bias,reversal learning,mental time travel,gratification delay,navigation strategies,envy-like behavior,motivational trade-off,emotional reactions to learning
+mental time travel,mental time travel,shared intentionality,mirror mark recognition,guilt-like behavior,numerical cognition,exhaustion-like behavior,multimodal integration,envy-like behavior
+mirror mark recognition,mirror mark recognition,social learning,motivational trade-off,hyperalgesia,object permanence,fear-like behavior,navigation strategies,exhaustion-like behavior
+motivational trade-off,motivational trade-off,socio-spatial cognition,multimodal integration,jealousy-like behavior,perspective taking,friendship-like behavior,numerical cognition,fear-like behavior
+multimodal integration,multimodal integration,temporal/spatial discounting,navigation strategies,joy-like behavior,physical reasoning,guilt-like behavior,object permanence,flexible self-protective behavior
+navigation strategies,navigation strategies,theory of mind,numerical cognition,liking-wanting dissociation,problem-solving,hyperalgesia,perspective taking,guilt-like behavior
+numerical cognition,numerical cognition,associative learning from pain,object permanence,love-like behavior,response-slowing,jealousy-like behavior,physical reasoning,hyperalgesia
+object permanence,object permanence,boredom-like behavior,perspective taking,motivational trade-off,reversal learning,joy-like behavior,problem-solving,jealousy-like behavior
+perspective taking,perspective taking,concept of death,physical reasoning,mourning-like behavior,shared intentionality,liking-wanting dissociation,response-slowing,joy-like behavior
+physical reasoning,physical reasoning,displacement behavior,problem-solving,panic-like behavior,social learning,loneliness-like behavior,responses to novelty,liking-wanting dissociation
+problem-solving,problem-solving,emotional contagion,response-slowing,play behavior,socio-spatial cognition,love-like behavior,reversal learning,loneliness-like behavior
+response-slowing,response-slowing,emotional reactions to learning,responses to novelty,play vocalization,symbolic representation of the world,maternal response to offspring distress,reverse reward test,love-like behavior
+responses to novelty,responses to novelty,fear-like behavior,reversal learning,pride-like behavior,temporal/spatial discounting,mourning-like behavior,shared intentionality,maternal response to offspring distress
+reversal learning,reversal learning,flexible self-protective behavior,reverse reward test,prioritizes pain response in relevant context,theory of mind,panic-like behavior,social learning,mourning-like behavior
+reverse reward test,reverse reward test,hyperalgesia,shared intentionality,ptsd-like behavior,tool use,play behavior,socio-spatial cognition,panic-like behavior
+shared intentionality,shared intentionality,liking-wanting dissociation,socio-spatial cognition,relief learning,transitive inference,play vocalization,symbolic representation of the world,play behavior
+social learning,social learning,play behavior,symbolic representation of the world,response modified by painkillers,uncertainty monitoring,pride-like behavior,temporal/spatial discounting,play vocalization
+socio-spatial cognition,socio-spatial cognition,prioritizes pain response in relevant context,temporal/spatial discounting,reward based learning,,prioritizes pain response in relevant context,theory of mind,pride-like behavior
+symbolic representation of the world,symbolic representation of the world,ptsd-like behavior,theory of mind,sadness-like behavior,,ptsd-like behavior,tool use,prioritizes pain response in relevant context
+temporal/spatial discounting,temporal/spatial discounting,relief learning,tool use,self-medication,,response modified by painkillers,transitive inference,ptsd-like behavior
+theory of mind,theory of mind,response modified by painkillers,transitive inference,sensory-affective dissociation,,sadness-like behavior,uncertainty monitoring,relief learning
+tool use,tool use,self-medication,uncertainty monitoring,shame-like behavior,,self-medication,,response modified by painkillers
+transitive inference,transitive inference,taste aversion behavior,anxiety-like behavior,sympathy-like behavior,,sensory-affective dissociation,,reward based learning
+uncertainty monitoring,uncertainty monitoring,trace conditioning and pain,associative learning from pain,taste aversion behavior,,shame-like behavior,,sadness-like behavior
+anxiety-like behavior,anxiety-like behavior,,boredom-like behavior,trace conditioning and pain,,sympathy-like behavior,,self-medication
+associative learning from pain,associative learning from pain,,concept of death,valuing behavior,,taste aversion behavior,,sensory-affective dissociation
+boredom-like behavior,boredom-like behavior,,curiosity-like behavior,,,trace conditioning and pain,,shame-like behavior
+concept of death,concept of death,,depression-like behavior,,,valuing behavior,,sympathy-like behavior
+curiosity-like behavior,curiosity-like behavior,,disgust-like behavior,,,,,taste aversion behavior
+depression-like behavior,depression-like behavior,,displacement behavior,,,,,trace conditioning and pain
+disgust-like behavior,disgust-like behavior,,emotional reactions to learning,,,,,valuing behavior
+displacement behavior,displacement behavior,,exhaustion-like behavior
+effects on exploratory behavior from pain,effects on exploratory behavior from pain,,fear-like behavior
+embarrassment-like behavior,embarrassment-like behavior,,flexible self-protective behavior
+emotional contagion,emotional contagion,,hyperalgesia
+emotional reactions to learning,emotional reactions to learning,,joy-like behavior
+envy-like behavior,envy-like behavior,,liking-wanting dissociation
+exhaustion-like behavior,exhaustion-like behavior,,panic-like behavior
+fear-like behavior,fear-like behavior,,play behavior
+flexible self-protective behavior,flexible self-protective behavior,,play vocalization
+friendship-like behavior,friendship-like behavior,,prioritizes pain response in relevant context
+guilt-like behavior,guilt-like behavior,,ptsd-like behavior
+helping behavior,helping behavior,,relief learning
+hyperalgesia,hyperalgesia,,response modified by painkillers
+jealousy-like behavior,jealousy-like behavior,,reward based learning
+joy-like behavior,joy-like behavior,,sadness-like behavior
+liking-wanting dissociation,liking-wanting dissociation,,self-medication
+loneliness-like behavior,loneliness-like behavior,,sensory-affective dissociation
+love-like behavior,love-like behavior,,taste aversion behavior
+maternal response to offspring distress,maternal response to offspring distress,,trace conditioning and pain
+mourning-like behavior,mourning-like behavior,,valuing behavior
+panic-like behavior,panic-like behavior
+parental care,parental care
+play behavior,play behavior
+play vocalization,play vocalization
+pride-like behavior,pride-like behavior
+prioritizes pain response in relevant context,prioritizes pain response in relevant context
+ptsd-like behavior,ptsd-like behavior
+relief learning,relief learning
+rescue behavior,rescue behavior
+response modified by painkillers,response modified by painkillers
+reward based learning,reward based learning
+sadness-like behavior,sadness-like behavior
+self-medication,self-medication
+sensory-affective dissociation,sensory-affective dissociation
+shame-like behavior,shame-like behavior
+social buffering,social buffering
+sympathy-like behavior,sympathy-like behavior
+taste aversion behavior,taste aversion behavior
+trace conditioning and pain,trace conditioning and pain
+valuing behavior,valuing behavior
+,working memory load
