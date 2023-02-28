@@ -82,10 +82,16 @@ for s in range(N_SCENARIOS):
         else:
             print('... Completed {}/{}'.format(s + 1, N_SCENARIOS))
 
-    for idx, row in species_scores.iterrows():
-        proxy = row['proxies']
+    #Set up for iteration over proxies                
+    bern_probs = []
+    proxies_arr = []
+    num_proxies = len(species_scores)
+    judgements = species_scores[SPECIES]
+    
+    for ii in range(0,num_proxies):
+        proxy = species_scores.proxies[ii]
 
-        judgment = row[SPECIES]
+        judgment = judgements[ii]
         judgment = judgment.lower()
 
 
@@ -95,15 +101,25 @@ for s in range(N_SCENARIOS):
             lower_prob = judgment_prob_map[judgment]['lower']
             upper_prob = judgment_prob_map[judgment]['upper']
             proxy_prob = random.uniform(lower_prob, upper_prob)
-                
-        has_proxy = stats.bernoulli.rvs(proxy_prob)
+            
+        bern_probs.append(proxy_prob)
+        proxies_arr.append(proxy)
+
+    #Obtain bernoulli draws         
+    draws = stats.bernoulli.rvs(bern_probs,size=len(bern_probs))
+    
+    #Store bernoulli draw results        
+    for ii in range(0,num_proxies):
+        proxy = proxies_arr[ii]  
+        has_proxy = draws[ii]
         if proxy in hc_proxies:
             score = HC_WEIGHT*has_proxy
         else:
             score = has_proxy
+            
         simulated_probs[proxy].append(proxy_prob)
         simulated_scores[proxy].append(score)
-
+            
 
 if SAVE:
     print('... Saving 1/1')

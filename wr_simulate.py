@@ -117,8 +117,15 @@ for s in range(N_SCENARIOS):
         else:
             print('... Completed {}/{}'.format(s + 1, N_SCENARIOS))
 
-    for idx, row in species_scores.iterrows():
-        proxy = row['proxies']
+    #Set up for iteration over proxies
+    num_proxies = len(species_scores)
+    bern_probs = []
+    proxies_arr = []
+    judgements = species_scores[SPECIES]    
+    
+    #Iterate over proxies
+    for ii in range(0,num_proxies):
+        proxy = species_scores.proxies[ii]
 
         if SPECIES in SENT_SPECIES and proxy in overlap_dict.keys():
             sent_proxies = overlap_dict[proxy]
@@ -140,7 +147,7 @@ for s in range(N_SCENARIOS):
             avg_score = a/count
             simulated_scores[proxy].append(avg_score)
         else:
-            judgement = row[SPECIES]
+            judgement = judgements[ii]
 
             if judgement == 'unknown':
                 proxy_prob = judgment_prob_map[judgement]
@@ -148,14 +155,25 @@ for s in range(N_SCENARIOS):
                 lower_prob = judgment_prob_map[judgement]['lower']
                 upper_prob = judgment_prob_map[judgement]['upper']
                 proxy_prob = random.uniform(lower_prob, upper_prob)
-                
-            has_proxy = stats.bernoulli.rvs(proxy_prob)
-            if proxy in hc_proxies:
-                score = HC_WEIGHT*has_proxy
-            else:
-                score = has_proxy
-            simulated_probs[proxy].append(proxy_prob)
-            simulated_scores[proxy].append(score)
+            bern_probs.append(proxy_prob)
+            proxies_arr.append(proxy)
+    
+    #Obtain bernoulli draws 
+    num_non_sent_proxies = len(bern_probs)
+    draws = stats.bernoulli.rvs(bern_probs,size=num_non_sent_proxies)
+    
+    #Store bernoulli draw results
+    for ii in range(0,num_non_sent_proxies):
+
+        proxy = proxies_arr[ii]  
+        has_proxy = draws[ii]
+        if proxy in hc_proxies:
+            score = HC_WEIGHT*has_proxy
+        else:
+            score = has_proxy
+        simulated_probs[proxy].append(proxy_prob)
+        simulated_scores[proxy].append(score)
+
 
 if SAVE:
     print('... Saving 1/1')
