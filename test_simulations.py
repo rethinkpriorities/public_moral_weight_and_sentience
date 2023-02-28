@@ -15,8 +15,11 @@ SENT_SPECIES = ['bees', 'cockroaches', 'fruit_flies', 'ants', \
 
 WEIGHT_NOS = "Yes"
 
+
+
 def test_sentience_scores(data, HC_WEIGHT, SPECIES):
     # set up
+    normal_95_range = 1.96    
     judgments = pd.read_csv(os.path.join('input_data', 'Sentience Judgments.csv'))
     hc_csv = os.path.join('input_data', 'Sentience High-Confidence Proxies.csv')
     hc_proxies = set()
@@ -67,9 +70,11 @@ def test_sentience_scores(data, HC_WEIGHT, SPECIES):
                     else:
                         ev = (judgments_map[judgment]['lower']+judgments_map[judgment]['upper'])/2
                         s = math.sqrt((1-ev)*ev/len(scores_lst))
-                    if mean_prob < ev - 1.96*s or mean_prob > ev + 1.96*s:
+                    limLow = ev - normal_95_range*s
+                    limHigh = ev + normal_95_range*s
+                    if mean_prob < limLow or mean_prob > limHigh:
                         outside_int += 1
-                        lst_outside.append((species, proxy, judgment, mean_prob, ev))
+                        lst_outside.append((species, proxy, judgment, mean_prob, limLow, limHigh))
             else: 
                 if judgment in {"unknown", "yes", "na"}:
                     if mean_prob != judgments_map[judgment]:
@@ -80,9 +85,12 @@ def test_sentience_scores(data, HC_WEIGHT, SPECIES):
                     count_uncertain_proxies += 1
                     ev = (judgments_map[judgment]['lower']+judgments_map[judgment]['upper'])/2
                     s = math.sqrt((1-ev)*ev/len(scores_lst))
-                    if mean_prob < ev - 1.96*s or mean_prob > ev + 1.96*s:
+                    limLow = ev - normal_95_range*s
+                    limHigh = ev + normal_95_range*s
+                    if mean_prob < limLow or mean_prob > limHigh:
                         outside_int += 1
-                        lst_outside.append((species, proxy, judgment, mean_prob, ev))
+                        lst_outside.append((species, proxy, judgment, mean_prob, limLow, limHigh))
+                    
     p_value = 1 - scipy.stats.binom.cdf(outside_int, count_uncertain_proxies, 0.05)
     if pass_test:
         print("All proxies with zero/one probabilities have scores equal to their expected values")
@@ -97,13 +105,14 @@ def test_sentience_scores(data, HC_WEIGHT, SPECIES):
             print("Species: {}".format(species))
             print("Outside int for proxy: {}".format(proxy))
             print("Judgment: {}".format(judgment))
-            print("Avg. score was {}").format(mean_prob)
+            print("Avg. score was {}".format(mean_prob))
             print("Expected to be between {} and {}".format(lower, upper))
     print("Pass Test: ")
     return pass_test
 
 def test_wr_scores(data, overlap_dict, WR_HC_WEIGHT, SENT_HC_WEIGHT, SPECIES):
     # set up
+    normal_95_range = 1.96    
     judgments = pd.read_csv(os.path.join('input_data', 'WR Judgments.csv'))
     wr_hc_csv = os.path.join('input_data', 'WR High-Confidence Proxies.csv')
     wr_hc_proxies = set()
@@ -195,9 +204,11 @@ def test_wr_scores(data, overlap_dict, WR_HC_WEIGHT, SENT_HC_WEIGHT, SPECIES):
                             else:
                                 ev = (judgments_map[judgment]['lower']+judgments_map[judgment]['upper'])/2
                                 s = math.sqrt((1-ev)*ev/len(wr_scores_lst))
-                            if mean_prob < ev - 1.96*s or mean_prob > ev + 1.96*s:
+                            limLow = ev - normal_95_range*s
+                            limHigh = ev + normal_95_range*s
+                            if mean_prob < limLow or mean_prob > limHigh:
                                 outside_int += 1
-                                lst_outside.append((species, proxy, judgment, mean_prob, ev))
+                                lst_outside.append((species, proxy, judgment, mean_prob, limLow, limHigh))
                     else: 
                         if judgment in {"unknown", "yes", "na"}:
                             if mean_prob != judgments_map[judgment]:
@@ -209,9 +220,11 @@ def test_wr_scores(data, overlap_dict, WR_HC_WEIGHT, SENT_HC_WEIGHT, SPECIES):
                             count_uncertain_proxies += 1
                             ev = (judgments_map[judgment]['lower']+judgments_map[judgment]['upper'])/2
                             s = math.sqrt((1-ev)*ev/len(wr_scores_lst))
-                            if mean_prob < ev - 1.96*s or mean_prob > ev + 1.96*s:
+                            limLow = ev - normal_95_range*s
+                            limHigh = ev + normal_95_range*s
+                            if mean_prob < limLow or mean_prob > limHigh:
                                 outside_int += 1
-                                lst_outside.append((species, proxy, judgment, mean_prob, ev - 1.96*s, ev + 1.96*s))
+                                lst_outside.append((species, proxy, judgment, mean_prob, limLow, limHigh))
 
     p_value = 1 - scipy.stats.binom.cdf(outside_int, count_uncertain_proxies, 0.05)
     if pass_test:
@@ -226,7 +239,7 @@ def test_wr_scores(data, overlap_dict, WR_HC_WEIGHT, SENT_HC_WEIGHT, SPECIES):
             print("Species: {}".format(species))
             print("Outside int for proxy: {}".format(proxy))
             print("Judgment: {}".format(judgment))
-            print("Avg. score was {}").format(mean_prob)
+            print("Avg. score was {}".format(mean_prob))
             print("Expected to be between {} and {}".format(lower, upper))
     print("Pass Test:")
     return pass_test
